@@ -1,13 +1,22 @@
 declare global {
     interface Question {
+        id: number
         question: string,
         options: string[],
         answer: string
     }
     interface Topic {
+        id: number,
         title: string,
         icon: string,
         questions?: Question[]
+    }
+    interface Quiz {
+        topic: string,
+        questions: Question[],
+        length: number
+        score: number,
+        currentIndex: number
     }
     interface QuizAction {
         key: string,
@@ -19,6 +28,5 @@ declare global {
         JavaScript: "blue",
         Accessibility: "puple",
     }
-    const BASE_API = "https://9a625ec4-7011-41d9-9b74-d307758a8988.mock.pstmn.io/"
 }
 export { }

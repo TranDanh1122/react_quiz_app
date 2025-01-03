@@ -5,12 +5,13 @@ interface Layout {
 }
 const Layout: React.FC<Layout> = ({ children }): React.JSX.Element => {
     return (
-        <>
+        <div className="w-[90%] max-w-[1160px] mx-auto">
             <Header></Header>
-            <main>
-                {children}
-            </main>
-        </>
+            {children}
+        </div>
+
+
+
 
     )
 }
