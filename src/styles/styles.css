@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .text-display {
+        @apply font-medium text-dark_31 text-[9rem]
+    }
+
+    .text-headL-bold {
+        @apply font-medium text-[4rem] text-dark_31
+    }
+
+    .text-headl-med {
+        @apply font-light text-[4rem] text-dark_31
+    }
+
+    .text-headm {
+        @apply font-medium text-[2.25rem] text-dark_31
+    }
+
+    .text-heads {
+        @apply font-medium text-[1.75rem] text-dark_31
+    }
+
+    .bodym {
+        @apply text-[1.5rem] text-dark_31 leading-[150%]
+    }
+
+    .bodys {
+        @apply italic leading-[150%] text-[1.25rem]
+    }
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("./fonts/Rubik-VariableFont_wght.ttf");
+}
+
+html,
+body {
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Rubik", sans-serif;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
